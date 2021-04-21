@@ -2,38 +2,113 @@
     box-sizing: border-box;
 }
 
+:root{
+    --ubuntu: 'Ubuntu Mono', monospace;
+}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+
 body{
-    background-color: purple;
-    color: white;
+    background-color: rgb(212, 236, 236);
+    /* background-image: url(/img/bg-mobile.svg); */
+    background-position: 10px 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    font-family: var(--ubuntu);
     padding: 0;
     margin: 0;
 }
 
+hr{
+    background-color: black;
+    height: 2px;
+    margin: 5% auto;
+    width: 80%;
+}
 #nav{
-    width: 100vw;
     height: 5vh;
     overflow: hidden;
     color: black;
     background-color: white;
 }
+#nav a{
+    text-decoration: none;
+}
 #menu{
     display: inline-block;
-    width: 50vw;
-    float: left;
+    width: 50%;
 }
-#nav a{
+#menu a{
     display: inline-block;
-    width: 50vw;
     height: 4vh;
+    width: 100%;
     padding: 5%;
 }
 #nav:hover{
     height: fit-content;
 }
 #social{
-    width: fit-content;
+    width: 30%;
+    float: right;
 }
-#social p{
+#social a{
     display: inline-block;
-    width: 2vw;
+    padding: 5%;
+    width: 7vw;
+    height: 50%;
+    text-align: center;
+}
+
+#hello{
+    background: red;
+    color: white;
+    background-image: url('/img/Rain-on-the-Window_www.FullHDWpp.com_.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 25vh;
+    padding: 5%;
+}
+
+h2, h3{
+    text-align: center;
+}
+#about{
+    margin-top: 5%;
+    width: 100vw;
+}
+.my-photo{
+    padding: 1%;
+    width: 100vw;
+    min-width: 375px;
+    height: fit-content;
+    background-color: rgb(110, 53, 98);
+    overflow: scroll;
+}
+.my-photo img{
+    width: 50%;
+    height: auto;
+    border-right: solid 10px rgb(32, 28, 28);
+}
+
+.my-photo p{
+    width: 50%;
+    height: 80%;
+    color: white;
+    float: right;
+    clear: left;
+    padding: 2% 2% 0 2%;
+    text-align: center;
+}
+
+.more-info{
+    min-width: 375px;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+}
+
+.more-info span{
+    display: block;
+    margin-top: -3%;
 }
