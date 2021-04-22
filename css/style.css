@@ -223,10 +223,9 @@ a>img:hover{
 
 footer {
     background: var(--purple);
-    height: 5vh;
+    height: 7vh;
     min-width: 375px;
     color: white;
     text-align: center;
-    padding-top: 2%;
     margin-bottom: 0;
 }
