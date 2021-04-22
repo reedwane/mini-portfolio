@@ -74,7 +74,7 @@ i{
 #hello{
     background: var(--purple);
     color: white;
-    background-image: url('/img/rain_drops_background.JPG');
+    background-image: url('https://github.com/reedwane/mini-portfolio/blob/d9905ba06efd911ef711d0c67e327f586fe148ae/img/rain_drops_background.JPG'), url('/img/rain_drops_background.JPG');
     background-size: cover;
     width: 100vw;
     min-width: 375px;
