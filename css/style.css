@@ -11,7 +11,7 @@
 
 
 body{
-    background-color: var(--light-blue);
+    background-color: var(--purple);
     /* background-image: url(/img/bg-mobile.svg); */
     background-position: 10px 250px;
     background-repeat: no-repeat;
@@ -20,6 +20,9 @@ body{
     font-family: var(--ubuntu);
     padding: 0;
     margin: 0 auto;
+}
+#main{
+    background-color: var(--light-blue);
 }
 
 hr{
