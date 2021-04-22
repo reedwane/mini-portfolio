@@ -4,12 +4,14 @@
 
 :root{
     --ubuntu: 'Ubuntu Mono', monospace;
+    --light-blue: rgb(212, 236, 236);
+    --purple: rgb(110, 53, 98);
 }
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
 
 
 body{
-    background-color: rgb(212, 236, 236);
+    background-color: var(--light-blue);
     /* background-image: url(/img/bg-mobile.svg); */
     background-position: 10px 250px;
     background-repeat: no-repeat;
@@ -22,13 +24,19 @@ body{
 
 hr{
     background-color: black;
-    height: 2px;
     margin: 5% auto;
     width: 80%;
 }
+
+i{
+    color: var(--purple);
+}
 #nav{
     height: 5vh;
+    min-width: 375px;
+    width: 100vw;
     overflow: hidden;
+    position: fixed;
     color: black;
     background-color: white;
 }
@@ -38,6 +46,7 @@ hr{
 #menu{
     display: inline-block;
     width: 50%;
+    padding: 2%;
 }
 #menu a{
     display: inline-block;
@@ -61,13 +70,15 @@ hr{
 }
 
 #hello{
-    background: red;
+    background: var(--purple);
     color: white;
     background-image: url('/img/Rain-on-the-Window_www.FullHDWpp.com_.jpg');
     background-size: cover;
     width: 100vw;
+    min-width: 375px;
     height: 25vh;
     padding: 5%;
+    padding-top: 10%;
 }
 
 h2, h3{
@@ -82,12 +93,18 @@ h2, h3{
     width: 100vw;
     min-width: 375px;
     height: fit-content;
-    background-color: rgb(110, 53, 98);
+    background-color: var(--purple);
     overflow: scroll;
 }
-.my-photo img{
+
+.photo{
+    display: inline-block;
     width: 50%;
-    height: auto;
+    margin: 0;
+}
+.my-photo img{
+    width: 100%;
+    height: 100%;
     border-right: solid 10px rgb(32, 28, 28);
 }
 
@@ -101,14 +118,109 @@ h2, h3{
     text-align: center;
 }
 
-.more-info{
+.more-info, .education, .learning{
     min-width: 375px;
     text-align: center;
     font-weight: bold;
     background-color: white;
+    padding: 5%;
 }
 
-.more-info span{
+.more-info h3, .education h3, .learning h3{
+    margin-bottom: 0%;
+}
+
+.education{
+    background-color: var(--light-blue);
+}
+
+.abilities{
+    min-width: 375px;
+}
+
+.lang-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.lang-list ul{
+    display: inline-block;
+    width: 48%;
+    font-size: 120%;
+}
+.lang-list li{
+    width: 100%;
+    list-style-type: square;
+}
+
+progress{
+    color: white;
+    background: var(--purple);
+    height: 10px;
+    display: inline-block;
+}
+progress::-webkit-progress-value {
+    background: white;
+}
+progress::-webkit-progress-bar {
+    background: var(--purple);
+    
+}
+
+#portfolio{
+    background: white;
+}
+
+#portfolio-list{
+    min-width: 375px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 5vh;
+
+}
+.screenshot{
+    width: 80vw;
+    height: fit-content;
+    margin: 0 auto;
+    display: inline-block;
+    background-color: var(--light-blue);
+}
+
+.screenshot a{
+    width: 100%;
+    height: 8vh;
+}
+
+a>img{
+    width: 100%;
+    height: auto;
+}
+
+a>img:hover{
+    opacity: .7;
+    content: "visit";
+}
+
+#contact {
+    min-width: 375px;
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--light-blue);
+    padding: 5%;
+}
+#contact span{
     display: block;
-    margin-top: -3%;
+    margin-top: 5%;
+}
+#contact a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    background: var(--purple);
+    height: 5vh;
+    color: white;
+    text-align: center;
+    padding: 2%;
 }
