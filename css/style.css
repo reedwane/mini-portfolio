@@ -248,6 +248,9 @@ footer p{
     #nav i{
         color: white;
     }
+    #nav i:hover{
+        color: var(--light-blue);
+    }
     #nav{
         background-color: var(--purple);
         color: white;
