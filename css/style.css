@@ -281,7 +281,7 @@ footer p{
         height: 80%;
         padding: 5% 3% 5%;
         line-height: 3vh;
-        font-size: 130%;
+        font-size: 140%;
         overflow: auto;
     }
 }
@@ -292,7 +292,6 @@ footer p{
     #nav{
         width: 20vw;
         height: 100%;
-        overflow: hidden;
         min-width: 0;
         border-right: 5px solid white;
     }
@@ -342,7 +341,8 @@ footer p{
     }
 
     .more-info, .education, .learning, .abilities{
-        width: 36vw;
+        width: 37vw;
+        max-width: 480px;
         float: right;
     }
     .more-info, .learning {
@@ -370,4 +370,14 @@ footer p{
         overflow: hidden;
     }
 
+    #contact{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (min-width: 1400) {
+    .more-info, .education, .learning, .abilities{
+        width: 40vw;
+    }
 }
