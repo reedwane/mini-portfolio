@@ -272,7 +272,8 @@ footer p{
     }
 
     .my-photo{
-        height: 50vh;
+        height: fit-content;
+        max-height: 50vh;
         overflow: hidden;
     }
 
@@ -326,6 +327,18 @@ footer p{
     #hello, #info, #about, .my-photo, #portfolio, #contact{
         width: 80vw;
         float: right;
+        clear: right;
+    }
+    .other-informations {
+        float: right;
+        display: grid;
+        grid-template-columns: 38vw 38vw;
+        grid-template-rows: auto;
+        gap: 3vw;
+    }
+
+    .other-informations>div{
+        max-width: 38vw;
     }
 
     #hello{
@@ -338,18 +351,6 @@ footer p{
     }
     .learning{
         background-color: var(--light-blue);
-    }
-
-    .more-info, .education, .learning, .abilities{
-        width: 37vw;
-        max-width: 480px;
-        float: right;
-    }
-    .more-info, .learning {
-        margin-right: 3vw;
-    }
-    .learning{
-        padding-top: 0;
     }
 
     .screenshot{
@@ -374,10 +375,4 @@ footer p{
         font-size: 1.5rem;
     }
 
-}
-
-@media screen and (min-width: 1400) {
-    .more-info, .education, .learning, .abilities{
-        width: 40vw;
-    }
 }
